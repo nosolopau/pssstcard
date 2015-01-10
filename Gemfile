@@ -9,6 +9,8 @@ gem 'capistrano-rails', '~> 1.1'
 gem 'capistrano3-delayed-job', '~> 1.0'
 gem 'unicorn'
 gem 'dotenv-rails'
+gem 'sentry-raven', git: 'https://github.com/getsentry/raven-ruby.git'
+gem 'encryptor'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
@@ -21,7 +23,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
-gem 'encryptor'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
