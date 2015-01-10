@@ -1,0 +1,18 @@
+<h1>Pssstcard</h1>
+<div class="row">
+    <div class="col-md-8">
+        <%= form_tag process_path, role: :form do %>
+            <div class="form-group">
+              <%= label_tag :key, 'SK (Secret key)' %>
+              <%= text_field_tag :key, params[:key], class: 'form-control', required: true %>
+            </div>
+            <div class="form-group">
+                <%= label_tag :text, 'T (Text)' %>
+                <%= text_area_tag :text, @text, class: 'form-control', rows: 5, required: true  %>
+            </div>
+
+            <%= submit_tag 'Encrypt!', name: 'encrypt', class: 'btn btn-default' %>
+            <%= submit_tag 'Decrypt!', name: 'decrypt', class: 'btn btn-default' %>
+        <% end %>
+    </div>
+</div>
