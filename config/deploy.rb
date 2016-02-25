@@ -10,7 +10,7 @@ set :deploy_via, 'remote_cache'
 set :rails_env, 'production'
 
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-set :linked_files, %w{.env}
+set :linked_files, %w{.env newrelic.yml}
 set :unicorn_binary, "bundle exec unicorn"
 set :unicorn_config, "#{release_path}/config/unicorn.rb"
 set :unicorn_pid, "#{shared_path}/tmp/pids/unicorn.pid"
