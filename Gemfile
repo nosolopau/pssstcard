@@ -11,6 +11,7 @@ gem 'unicorn'
 gem 'dotenv-rails'
 gem 'sentry-raven', git: 'https://github.com/getsentry/raven-ruby.git'
 gem 'encryptor'
+gem 'whenever', require: false
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.2.0'
